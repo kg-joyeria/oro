@@ -39,7 +39,7 @@ img{display:block;max-width:100%}
 .slide .ph{aspect-ratio:4/4.3;background:#111}
 .slide .ph img{width:100%;height:100%;object-fit:cover}
 .slide .ov{position:absolute;inset:auto 0 0 0;padding:70px 22px 46px;background:linear-gradient(transparent,rgba(0,0,0,.92))}
-.slide h2{font-family:var(--serif);font-weight:600;font-size:34px;line-height:1.05;margin-bottom:6px}
+.slide h2{font-family:var(--serif);font-weight:600;font-size:34px;line-height:1.05;margin-bottom:22px}
 .slide .pr{font-size:20px;color:var(--silver);margin-bottom:14px;font-weight:500}
 .btn{display:inline-block;padding:12px 26px;font-size:14px;font-weight:600;letter-spacing:.04em;border-radius:2px}
 .btn-w{background:var(--white);color:var(--black)}
@@ -401,7 +401,7 @@ function buildHero() {
   hn = picks.length;
   $('#heroT').innerHTML = picks.map((p, i) => `
     <div class="slide"><div class="ph"><img src="${esc(IMG(p.fotos[0], 800))}" data-o="${esc(p.fotos[0])}" onerror="${FB}" alt="${esc(p.producto)}" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}></div>
-    <div class="ov"><h2>${esc(gTitle(p))}</h2><div class="pr${p.desc && !p._grp ? ' dp' : ''}">${listPrice(p)}</div>
+        <div class="ov"><h2>${esc(gTitle(p))}</h2>
     <button class="btn btn-w" data-open="${esc(p.id)}">Ver pieza</button></div></div>`).join('');
   $('#heroD').innerHTML = picks.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join('');
   $('#hero').hidden = false;
