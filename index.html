@@ -473,7 +473,7 @@ function buildCols() {
 }
 $('#cols').addEventListener('click', e => {
   if (e.target.closest('[data-ext]')) {
-    if (COLECCION_EXTERNA.url) window.open(COLECCION_EXTERNA.url, '_blank', 'noopener');
+    if (COLECCION_EXTERNA.url) location.href = COLECCION_EXTERNA.url;
     else toast(`${COLECCION_EXTERNA.nombre} llega muy pronto`);
     return;
   }
