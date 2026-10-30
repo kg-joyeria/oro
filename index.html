@@ -247,12 +247,12 @@ body{background:#000;color:#fff;overscroll-behavior:none}
 <div class="toast" id="toast"></div>
 <script>
 /* ===== CONFIGURACIÓN ===== */
-const API_URL   = 'PEGA_AQUI_EL_ENLACE_DEL_APPS_SCRIPT_DEL_CATALOGO_DE_ORO';          // URL de la Web App (termina en /exec)
+const API_URL   = 'https://script.google.com/macros/s/AKfycbw0NjZNIvik-ulYxjfttZNS393qczhY082e8BHd_QzvUPWDDhoY64h-eYs_77_DgDYPBQ/exec';          // URL de la Web App (termina en /exec)
 const WHATSAPP  = '526625133763';                    // con código de país, sin + ni espacios
 const LOGO      = 'https://i.ibb.co/cSWNtWvk/IMG-4273.png';
 const LOGO_INVERT = false;                           // true = vuelve blanco un logo oscuro/negro
 const ETIQUETA_OPCION = 'Grosor';                  // título de los botones cuando una pieza tiene varios modelos (Grosor, Largo, Modelo...)
-const COLECCION_EXTERNA = { nombre: 'Plata', url: '', foto: '', color: '#c4c7cc' };   // Tarjeta que lleva al catálogo de PLATA. url: dirección de ese catálogo (vacía = "Muy pronto"). foto: enlace de la foto de portada (vacía = usa la columna Portada de una fila con colección Plata). color: color del borde y del texto
+const COLECCION_EXTERNA = { nombre: 'Plata', url: 'https://github.com/kg-joyeria/catalogo', foto: 'https://github.com/kg-joyeria/catalogo/blob/main/IMG_9148.jpeg?raw=true', color: '#c4c7cc' };   // Tarjeta que lleva al catálogo de PLATA. url: dirección de ese catálogo (vacía = "Muy pronto"). foto: enlace de la foto de portada (vacía = usa la columna Portada de una fila con colección Plata). color: color del borde y del texto
 const TEMA_ORO = true;                           // true = tema dorado: todas las letras en dorado (los precios no cambian)
 if (TEMA_ORO) document.documentElement.classList.add('oro');
 const TITULOS_DORADOS = true;                  // true = los títulos (Colecciones, Catálogo) se doran letra por letra al aparecer
